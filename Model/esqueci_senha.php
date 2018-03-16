@@ -35,7 +35,7 @@ if($sql->rowCount() > 0){
   $sql->execute();
 
   //Código para envio do email para recuperação de senha
-  $link = "http://localhost/Hotel/View/redefinir_senha.php?t=$token";
+  $link = "http://localhost/Email%20Futuro/View/redefinir_senha.php?t=$token";
   $link2 = "http://localhost/Email%20Futuro/View/esqueci_senha.php";
 
   $msg = "Clique <a href='$link' target='_blank'>aqui</a> ou no link abaixo para recuperar sua senha."

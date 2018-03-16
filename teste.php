@@ -1,4 +1,3 @@
 <?php
-$senha = md5('123456');
-echo $senha;
+echo date('Y-m-d H:i');
 ?>
