@@ -4,6 +4,11 @@ session_start();
 if(isset($_POST['cadastrar'])){
   require "../Control/valida_cadastro.php";
 }
+
+if(isset($_SESSION['logado'])){
+  header('Location: index.php');
+  exit;
+}
 ?>
 <html>
 <head>

@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if(isset($_SESSION['logado'])){
+  header('Location: index.php');
+  exit;
+}
+
 if(isset($_POST['recuperar'])){
   require "../Control/valida_esqueci_senha.php";
 }
@@ -26,7 +31,6 @@ if(isset($_POST['recuperar'])){
 
     <input type="submit" name="recuperar" value="Recuperar"><br><br>
   </form>
-  <a href="cadastro.php">Cadastrar-se</a>
-  <a href="recupera_senha.php">Esqueci a senha</a>
+  <a href="login.php">Voltar</a>
 </body>
 </html>

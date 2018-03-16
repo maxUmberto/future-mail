@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if(isset($_SESSION['logado'])){
+  header('Location: index.php');
+  exit;
+}
+
 if(isset($_GET['t'])){
   $token = $_GET['t'];
   require "../Control/valida_redefinir_senha.php";
