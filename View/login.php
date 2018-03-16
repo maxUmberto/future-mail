@@ -30,6 +30,6 @@ if(isset($_POST['entrar'])){
     <input type="submit" name="entrar" value="Entrar"><br><br>
   </form>
   <a href="cadastro.php">Cadastrar-se</a>
-  <a href="recupera_senha.php">Esqueci a senha</a>
+  <a href="esqueci_senha.php">Esqueci a senha</a>
 </body>
 </html>

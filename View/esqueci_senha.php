@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-if(isset($_POST['recupera'])){
-  require "../Control/valida_recuperacao_senha.php";
+if(isset($_POST['recuperar'])){
+  require "../Control/valida_esqueci_senha.php";
 }
 ?>
 <html>
