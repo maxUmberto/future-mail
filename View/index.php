@@ -8,4 +8,5 @@ if(!isset($_SESSION['logado']) || empty($_SESSION['logado'])){
 require "../Model/recupera_dados.php";
 ?>
 <h1>Bem vindo <b><?php echo $dados['nome']; ?></b></h1>
+<a href="novo_email.php">Novo Email</a>
 <a href="../Control/logout.php">Sair</a>
